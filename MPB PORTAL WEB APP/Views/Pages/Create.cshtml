@@ -1,0 +1,60 @@
+﻿@model MPB_PORTAL_WEB_APP.ViewModels.PageViewModel
+@{
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+    ViewData["Title"] = "Create New Page";
+}
+
+<h2>Create New Page</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label">Page Title</label>
+        <input asp-for="Title" class="form-control" required />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MetaTitle" class="form-label">Meta Title</label>
+        <input asp-for="MetaTitle" class="form-control" />
+        <span asp-validation-for="MetaTitle" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MetaDescription" class="form-label">Meta Description</label>
+        <textarea asp-for="MetaDescription" class="form-control"></textarea>
+        <span asp-validation-for="MetaDescription" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Content" class="form-label">Content</label>
+        <textarea asp-for="Content" id="contentEditor" class="form-control"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Page</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('contentEditor');
+    </script>
+}

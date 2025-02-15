@@ -1,0 +1,70 @@
+﻿@model MPB_PORTAL_WEB_APP.ViewModels.ReportViewModel
+
+@{
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+    ViewData["Title"] = "Create New Report";
+}
+
+<h2>Create New Report</h2>
+
+<div class="card">
+    <div class="card-body">
+
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                @TempData["SuccessMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @TempData["ErrorMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <li>@error.ErrorMessage</li>
+                    }
+                </ul>
+            </div>
+        }
+
+        <form asp-action="Create" asp-controller="Reports" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label">Report Title</label>
+                <input asp-for="Title" class="form-control" required />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="DateOfReport" class="form-label">Date of Report</label>
+                <input asp-for="DateOfReport" type="date" class="form-control" required />
+                <span asp-validation-for="DateOfReport" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="File" class="form-label">Upload File</label>
+                <input asp-for="File" type="file" class="form-control" accept=".pdf,.doc,.docx" required />
+                <span asp-validation-for="File" class="text-danger"></span>
+                <small class="form-text text-muted">Allowed file types: PDF, DOC, DOCX. Max size: 2MB.</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Report</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

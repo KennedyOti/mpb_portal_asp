@@ -1,0 +1,17 @@
+﻿@model MPB_PORTAL_WEB_APP.Models.Pages
+@{
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+    ViewData["Title"] = "Page Details";
+}
+
+<h2>@Model.Title</h2>
+
+<p><strong>Meta Title:</strong> @Model.MetaTitle</p>
+<p><strong>Meta Description:</strong> @Model.MetaDescription</p>
+
+<div>
+    <h4>Content:</h4>
+    @Html.Raw(Model.Content)
+</div>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back to Pages</a>

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<MPB_PORTAL_WEB_APP.Models.CountyActivity>
+@{
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+    ViewData["Title"] = "Manage Activities";
+}
+
+<h2>Manage Activities</h2>
+
+<form method="get" class="mb-3">
+    <div class="row g-2">
+        <!-- Bootstrap row with gutters -->
+        <div class="col-md-3">
+            <input type="text" name="ActivityName" class="form-control" placeholder="Activity Name" value="@ViewData["ActivityName"]" />
+        </div>
+        <div class="col-md-3">
+            <input type="text" name="Organization" class="form-control" placeholder="Organization" value="@ViewData["Organization"]" />
+        </div>
+        <div class="col-md-2">
+            <select name="Status" class="form-control">
+                <option value="">All Statuses</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+                <option value="Cancelled">Cancelled</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <input type="date" name="StartDate" class="form-control" value="@ViewData["StartDate"]" />
+        </div>
+        <div class="col-md-2">
+            <input type="date" name="EndDate" class="form-control" value="@ViewData["EndDate"]" />
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary w-100">Filter</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Activity Name</th>
+            <th>Organization</th>
+            <th>Location</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var activity in Model)
+        {
+            <tr>
+                <td>@activity.ActivityName</td>
+                <td>@activity.Organization</td>
+                <td>@activity.Location</td>
+                <td>@activity.StartDate.ToShortDateString()</td>
+                <td>@activity.EndDate.ToShortDateString()</td>
+                <td>@activity.Status</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Activities", new { id = activity.Id })" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="@Url.Action("Show", "Activities", new { id = activity.Id })" class="btn btn-info btn-sm">View</a> <!-- Corrected controller/action call -->
+                    <a href="@Url.Action("Delete", "Activities", new { id = activity.Id })" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

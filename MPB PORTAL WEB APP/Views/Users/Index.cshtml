@@ -1,0 +1,51 @@
+﻿@model List<MPB_PORTAL_WEB_APP.Models.Users>
+
+@{
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+}
+
+<h1 class="text-center">User Management</h1>
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+
+                        <th>User_Id</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model)
+                    {
+                        <tr>
+                            <td>
+                                @user.Id
+                            </td>
+                            <td>@user.FullName</td>
+                            <td>@user.Email</td>
+                            <td>@user.Role</td>
+                            <td>
+                                <a href="@Url.Action("Edit", "Profile", new { id = user.Id })">
+                                    <i class="fas fa-edit"></i> Manage
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <!-- Pagination Links -->
+            <div class="d-flex justify-content-center mt-3">
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <a href="@Url.Action("Index", new { page = i })" class="btn @(ViewBag.CurrentPage == i ? "btn-primary" : "btn-secondary") me-1">@i</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

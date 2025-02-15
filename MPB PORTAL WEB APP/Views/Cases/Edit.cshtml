@@ -1,0 +1,76 @@
+﻿@model MPB_PORTAL_WEB_APP.ViewModels.CaseViewModel
+@{
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+    ViewData["Title"] = "Edit Case";
+}
+
+<h2>Edit Case</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Case Description</label>
+        <textarea asp-for="Description" class="form-control" rows="4" required></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AssignedStaffId" class="form-label">Assign to Staff</label>
+        <select asp-for="AssignedStaffId" class="form-select" required>
+            <option value="">Select Staff</option>
+            @foreach (var staff in ViewBag.StaffMembers)
+            {
+                <option value="@staff.Id" selected="@(staff.Id == Model.AssignedStaffId)"> @staff.FullName</option>
+            }
+        </select>
+        <span asp-validation-for="AssignedStaffId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Status" class="form-label">Status</label>
+        <select asp-for="Status" class="form-select" required>
+            <option value="pending" selected="@(Model.Status == "pending")">Pending</option>
+            <option value="in_progress" selected="@(Model.Status == "in_progress")">In Progress</option>
+            <option value="resolved" selected="@(Model.Status == "resolved")">Resolved</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="StartDate" class="form-label">Start Date</label>
+        <input asp-for="StartDate" type="date" class="form-control" required />
+        <span asp-validation-for="StartDate" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="EndDate" class="form-label">End Date (Optional)</label>
+        <input asp-for="EndDate" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Files" class="form-label">Attachments (Optional)</label>
+        <input asp-for="Files" type="file" class="form-control" multiple />
+        @if (Model.ExistingAttachments != null && Model.ExistingAttachments.Count > 0)
+        {
+            <label class="form-label mt-2">Existing Attachments:</label>
+            <ul>
+                @foreach (var file in Model.ExistingAttachments)
+                {
+                    <li><a href="~/@file" target="_blank">View File</a></li>
+                }
+            </ul>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,0 +1,21 @@
+﻿@model MPB_PORTAL_WEB_APP.Models.Report
+
+@{
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+    ViewData["Title"] = "Report Details";
+}
+
+<h2>Report Details</h2>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Title:</strong> @Model.Title</p>
+        <p><strong>Date of Report:</strong> @Model.DateOfReport.ToString("dd MMM yyyy")</p>
+        <p><strong>Submitted By:</strong> @Model.Report_Made_By</p>
+        <p><strong>Status:</strong> @Model.Status</p>
+        @if (!string.IsNullOrEmpty(Model.FilePath))
+        {
+            <p><strong>File:</strong> <a href="~/@Model.FilePath" target="_blank">View Report</a></p>
+        }
+        <a asp-action="Index" class="btn btn-secondary">Back to Reports</a>
+    </div>
+</div>

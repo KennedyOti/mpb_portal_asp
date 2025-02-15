@@ -1,0 +1,31 @@
+﻿@model MPB_PORTAL_WEB_APP.ViewModels.CaseViewModel
+@{
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+    ViewData["Title"] = "Case Details";
+}
+
+<h2>Case Details</h2>
+
+<div class="card">
+    <div class="card-body">
+        <p><strong>Client Name:</strong> @Model.ClientName</p>
+        <p><strong>Description:</strong> @Model.Description</p>
+        <p><strong>Assigned Staff:</strong> @Model.AssignedStaffId</p>
+        <p><strong>Status:</strong> <span class="badge bg-@(Model.Status == "pending" ? "warning" : Model.Status == "in_progress" ? "info" : "success")">@Model.Status</span></p>
+        <p><strong>Start Date:</strong> @Model.StartDate.ToString("yyyy-MM-dd")</p>
+        <p><strong>End Date:</strong> @(Model.EndDate?.ToString("yyyy-MM-dd") ?? "N/A")</p>
+
+        @if (Model.ExistingAttachments != null && Model.ExistingAttachments.Count > 0)
+        {
+            <p><strong>Attachments:</strong></p>
+            <ul>
+                @foreach (var file in Model.ExistingAttachments)
+                {
+                    <li><a href="~/@file" target="_blank">View File</a></li>
+                }
+            </ul>
+        }
+
+        <a href="@Url.Action("Index", "Cases")" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

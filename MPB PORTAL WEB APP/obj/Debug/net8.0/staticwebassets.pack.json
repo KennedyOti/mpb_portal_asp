@@ -1,0 +1,489 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\mpbapp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\mpbapp.4b8nv95thx.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\css\\fonts.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\css\\fonts.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\css\\kaiadmin.css",
+      "PackagePath": "staticwebassets\\assets\\css\\kaiadmin.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\css\\kaiadmin.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\kaiadmin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\css\\plugins.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\css\\plugins.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\images\\logo1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\images\\user.png",
+      "PackagePath": "staticwebassets\\assets\\images\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\core\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\core\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\core\\jquery-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\core\\jquery-3.7.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\core\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\core\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\kaiadmin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\kaiadmin.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\kaiadmin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\kaiadmin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\bootstrap-notify\\bootstrap-notify.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\bootstrap-notify\\bootstrap-notify.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\bootstrap-tagsinput\\bootstrap-tagsinput.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\bootstrap-tagsinput\\bootstrap-tagsinput.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\bootstrap-toggle\\bootstrap-toggle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\bootstrap-toggle\\bootstrap-toggle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\chart-circle\\circles.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\chart-circle\\circles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\chart.js\\chart.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\chart.js\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\datatables\\datatables.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\datatables\\datatables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\datepicker\\bootstrap-datetimepicker.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\datepicker\\bootstrap-datetimepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\dropzone\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\dropzone\\dropzone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\fullcalendar\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\fullcalendar\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\gmaps\\gmaps.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\gmaps\\gmaps.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\jquery-scrollbar\\jquery.scrollbar.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\jquery-scrollbar\\jquery.scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\jquery.magnific-popup\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\jquery.magnific-popup\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\jquery.sparkline\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\jquery.sparkline\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\jquery.validate\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\jquery.validate\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\jsvectormap\\jsvectormap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\jsvectormap\\jsvectormap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\jsvectormap\\world.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\jsvectormap\\world.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\list.js\\list.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\list.js\\list.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\moment\\moment.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\moment\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\owl-carousel\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\owl-carousel\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\owl-carousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\owl-carousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\owl-carousel\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\owl-carousel\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\select2\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\select2\\select2.full.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\sortable\\sortable.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\sortable\\sortable.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\sticky-sidebar\\sticky-sidebar.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\sticky-sidebar\\sticky-sidebar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\summernote\\summernote-lite.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\summernote\\summernote-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\sweetalert\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\sweetalert\\sweetalert.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\plugin\\webfont\\webfont.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugin\\webfont\\webfont.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\3abe5c87-f187-4a1b-846d-485ee590a873.png",
+      "PackagePath": "staticwebassets\\attachments\\3abe5c87-f187-4a1b-846d-485ee590a873.png"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\af2cd94e-91f2-4024-86be-4b3d43373080.png",
+      "PackagePath": "staticwebassets\\attachments\\af2cd94e-91f2-4024-86be-4b3d43373080.png"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\db2566d0-4e41-442d-acd8-3bb76c2398dc.docx",
+      "PackagePath": "staticwebassets\\attachments\\db2566d0-4e41-442d-acd8-3bb76c2398dc.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\21efb598-ca74-42c6-bfa7-2b588b487e47.docx",
+      "PackagePath": "staticwebassets\\reports\\21efb598-ca74-42c6-bfa7-2b588b487e47.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\26d25a3a-b8c6-4424-b539-18d78fbce3ff.pdf",
+      "PackagePath": "staticwebassets\\reports\\26d25a3a-b8c6-4424-b539-18d78fbce3ff.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\2800cb5c-f702-4939-b59a-9a56d7742674.docx",
+      "PackagePath": "staticwebassets\\reports\\2800cb5c-f702-4939-b59a-9a56d7742674.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\2a68b2ef-5201-423c-9210-e5cbedc1907a.pdf",
+      "PackagePath": "staticwebassets\\reports\\2a68b2ef-5201-423c-9210-e5cbedc1907a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\4e48171f-72f1-4d3b-a20f-dfaa27b97fb6.pdf",
+      "PackagePath": "staticwebassets\\reports\\4e48171f-72f1-4d3b-a20f-dfaa27b97fb6.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\6e7402bf-a6ef-4b0e-b267-4362d698ef04.pdf",
+      "PackagePath": "staticwebassets\\reports\\6e7402bf-a6ef-4b0e-b267-4362d698ef04.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\b4fed5d4-3b89-4e11-9b27-9f82cb926343.docx",
+      "PackagePath": "staticwebassets\\reports\\b4fed5d4-3b89-4e11-9b27-9f82cb926343.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\b5d054fc-a1df-4977-8b09-f9c0ea1e1573.docx",
+      "PackagePath": "staticwebassets\\reports\\b5d054fc-a1df-4977-8b09-f9c0ea1e1573.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\cb4dc89a-de34-4383-84b9-edc3444d295e.docx",
+      "PackagePath": "staticwebassets\\reports\\cb4dc89a-de34-4383-84b9-edc3444d295e.docx"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.mpbapp.props",
+      "PackagePath": "build\\mpbapp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.mpbapp.props",
+      "PackagePath": "buildMultiTargeting\\mpbapp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.mpbapp.props",
+      "PackagePath": "buildTransitive\\mpbapp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.mpbapp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.mpbapp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

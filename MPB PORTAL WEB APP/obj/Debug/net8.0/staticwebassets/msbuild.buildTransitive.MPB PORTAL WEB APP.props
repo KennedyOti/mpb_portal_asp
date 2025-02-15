@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MPB PORTAL WEB APP.props" />
+</Project>
