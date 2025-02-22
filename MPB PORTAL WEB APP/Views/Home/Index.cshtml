@@ -1,7 +1,72 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
-<br /> <br />
+
+<!-- Custom CSS -->
+<style>
+    .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/hero-bg.jpg') center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+        .hero-section h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+    .features-section {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+    }
+
+        .features-section .card {
+            border: none;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            color: white;
+            padding: 20px;
+        }
+
+            .features-section .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+    .card-primary {
+        background-color: #007bff;
+    }
+
+    .card-success {
+        background-color: #28a745;
+    }
+
+    .card-warning {
+        background-color: #ffc107;
+        color: #212529 !important;
+    }
+
+    .icon-box {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+    }
+</style>
+
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
@@ -14,31 +79,75 @@
 <!-- Features Section -->
 <section class="features-section">
     <div class="container">
+        <h2 class="text-center mb-4">Why Choose MPB Portal?</h2>
         <div class="row text-center">
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Dashboard Overview</h5>
-                        <p class="card-text">Access real-time statistics and manage activities, cases, and reports all in one place.</p>
+                <div class="card card-primary shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-chart-line"></i>
                     </div>
+                    <h5 class="card-title">Dashboard Overview</h5>
+                    <p class="card-text">Access real-time statistics and manage activities, cases, and reports all in one place.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">User Management</h5>
-                        <p class="card-text">Manage roles, permissions, and user profiles with ease.</p>
+                <div class="card card-success shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-users-cog"></i>
                     </div>
+                    <h5 class="card-title">User Management</h5>
+                    <p class="card-text">Manage roles, permissions, and user profiles with ease.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Analytics & Reports</h5>
-                        <p class="card-text">Generate insightful reports and visualize data with advanced analytics.</p>
+                <div class="card card-warning shadow-sm p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-file-alt"></i>
                     </div>
+                    <h5 class="card-title">Analytics & Reports</h5>
+                    <p class="card-text">Generate insightful reports and visualize data with advanced analytics.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- About Section -->
+<section class="about-section">
+    <div class="container">
+        <h2 class="text-center mb-4">About MPB Portal</h2>
+        <p class="text-center">
+            MPB Portal is an intuitive platform designed to help organizations and institutions efficiently manage
+            activities, track cases, and generate analytical reports. Whether you're an administrator or a user,
+            our portal ensures a seamless experience.
+        </p>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <h5><i class="fas fa-check-circle text-success"></i> Secure</h5>
+                <p>Built with the latest security protocols to protect user data.</p>
+            </div>
+            <div class="col-md-4">
+                <h5><i class="fas fa-check-circle text-success"></i> Scalable</h5>
+                <p>Designed to handle a growing number of users and activities.</p>
+            </div>
+            <div class="col-md-4">
+                <h5><i class="fas fa-check-circle text-success"></i> User-Friendly</h5>
+                <p>A simple and intuitive interface for easy navigation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; @DateTime.Now.Year MPB Portal. All Rights Reserved.</p>
+        <p>
+            <a href="#" class="text-white me-3">Privacy Policy</a>
+            <a href="#" class="text-white">Terms of Service</a>
+        </p>
+    </div>
+</footer>
+
+<!-- FontAwesome & Bootstrap -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>

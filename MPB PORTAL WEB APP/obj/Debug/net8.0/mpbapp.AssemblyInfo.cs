@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mpbapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8f12d6215602578dde4cce17056adc634944a70")]
 [assembly: System.Reflection.AssemblyProductAttribute("mpbapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mpbapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,6 +6,22 @@
 
 <h2>Edit Activity</h2>
 
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
 <form asp-action="Edit" method="post">
     @Html.AntiForgeryToken()
     <input type="hidden" asp-for="Id" />
@@ -36,16 +52,6 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="ActualBeneficiaries"></label>
-        <input asp-for="ActualBeneficiaries" class="form-control" type="number" required />
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ExpectedBeneficiaries"></label>
-        <input asp-for="ExpectedBeneficiaries" class="form-control" type="number" required />
-    </div>
-
-    <div class="form-group">
         <label asp-for="Status"></label>
         <select asp-for="Status" class="form-control">
             <option value="In Progress">In Progress</option>
@@ -54,7 +60,5 @@
         </select>
     </div>
 
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Save Changes</button>
-    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
 </form>

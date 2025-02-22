@@ -5,7 +5,7 @@ using MPB_PORTAL_WEB_APP.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
-using OfficeOpenXml; // For Excel exports
+using OfficeOpenXml;
 using CsvHelper;
 using CsvHelper.Configuration;
 using iTextSharp.text;
@@ -37,14 +37,6 @@ namespace MPB_PORTAL_WEB_APP.Controllers
                 .Select(g => new { Status = g.Key, Total = g.Count() })
                 .ToListAsync();
 
-            var mostActiveCities = await _context.Activities
-                .Where(a => !string.IsNullOrEmpty(a.Location))
-                .GroupBy(a => a.Location)
-                .Select(g => new { Location = g.Key, Total = g.Count() })
-                .OrderByDescending(g => g.Total)
-                .Take(5)
-                .ToListAsync();
-
             var mostActiveOrganizations = await _context.Reports
                 .GroupBy(r => r.Report_Made_By)
                 .Select(g => new { Organization = g.Key, Total = g.Count() })
@@ -54,7 +46,6 @@ namespace MPB_PORTAL_WEB_APP.Controllers
 
             ViewBag.ActivitiesPerMonth = activitiesPerMonth;
             ViewBag.CaseStatuses = caseStatuses;
-            ViewBag.MostActiveCities = mostActiveCities;
             ViewBag.MostActiveOrganizations = mostActiveOrganizations;
 
             return View();
@@ -79,7 +70,7 @@ namespace MPB_PORTAL_WEB_APP.Controllers
             else if (type == "excel")
             {
                 var stream = new MemoryStream();
-                ExcelPackage.LicenseContext = LicenseContext.NonCommercial; // For EPPlus license context
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
                 using (var package = new ExcelPackage(stream))
                 {
                     var worksheet = package.Workbook.Worksheets.Add("Reports");

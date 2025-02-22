@@ -77,42 +77,37 @@ namespace MPB_PORTAL_WEB_APP.Controllers
                     FullName = model.Name,
                     Email = model.Email,
                     UserName = model.Email,
-                    EmailConfirmed = false // Ensure user needs to verify email before logging in
+                    EmailConfirmed = false
                 };
 
                 var result = await userManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
                 {
-                    // Assign default role "User"
                     if (!await roleManager.RoleExistsAsync("User"))
                     {
                         await roleManager.CreateAsync(new IdentityRole("User"));
                     }
                     await userManager.AddToRoleAsync(user, "User");
 
-                    // Generate Email Verification Token
                     var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
                     var confirmationLink = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token }, Request.Scheme);
 
-                    // Send Email Verification
                     await _emailSender.SendEmailAsync(user.Email, "Verify Your Email",
                         $"Please confirm your email by clicking this link: <a href='{HtmlEncoder.Default.Encode(confirmationLink)}'>Verify Email</a>");
 
                     TempData["SuccessMessage"] = "Registration successful! A verification email has been sent. Please verify your email before logging in.";
-
-                    return RedirectToAction("VerifyEmail", "Account"); // Redirect to verify email page
+                    return RedirectToAction("Login", "Account");
                 }
                 else
                 {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
+                    TempData["ErrorMessage"] = string.Join(" ", result.Errors.Select(e => e.Description));
+                    return RedirectToAction("Login", "Account");
                 }
             }
             return View(model);
         }
+
 
 
         // Logout Method

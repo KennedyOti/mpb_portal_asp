@@ -2,13 +2,19 @@
 @{
     Layout = "~/Views/Shared/_PortalLayout.cshtml";
     ViewData["Title"] = "Manage Activities";
+
+    // Pagination variables
+    int pageNumber = ViewData["PageNumber"] as int? ?? 1;
+    int pageSize = ViewData["PageSize"] as int? ?? 10;
+    int totalRecords = ViewData["TotalRecords"] as int? ?? 0;
+    int totalPages = (int)Math.Ceiling((double)totalRecords / pageSize);
 }
 
 <h2>Manage Activities</h2>
 
+<!-- Filter Form -->
 <form method="get" class="mb-3">
     <div class="row g-2">
-        <!-- Bootstrap row with gutters -->
         <div class="col-md-3">
             <input type="text" name="ActivityName" class="form-control" placeholder="Activity Name" value="@ViewData["ActivityName"]" />
         </div>
@@ -18,9 +24,9 @@
         <div class="col-md-2">
             <select name="Status" class="form-control">
                 <option value="">All Statuses</option>
-                <option value="In Progress">In Progress</option>
-                <option value="Completed">Completed</option>
-                <option value="Cancelled">Cancelled</option>
+                <option value="In Progress" selected="@(ViewData["Status"]?.ToString() == "In Progress" ? "selected" : null)">In Progress</option>
+                <option value="Completed" selected="@(ViewData["Status"]?.ToString() == "Completed" ? "selected" : null)">Completed</option>
+                <option value="Cancelled" selected="@(ViewData["Status"]?.ToString() == "Cancelled" ? "selected" : null)">Cancelled</option>
             </select>
         </div>
         <div class="col-md-2">
@@ -35,6 +41,7 @@
     </div>
 </form>
 
+<!-- Activity Table -->
 <table class="table table-bordered table-hover">
     <thead>
         <tr>
@@ -56,13 +63,59 @@
                 <td>@activity.Location</td>
                 <td>@activity.StartDate.ToShortDateString()</td>
                 <td>@activity.EndDate.ToShortDateString()</td>
-                <td>@activity.Status</td>
+                <td>
+                    <span class="badge 
+                        @(activity.Status == "In Progress" ? "bg-warning text-dark" : 
+                          activity.Status == "Completed" ? "bg-success" : 
+                          activity.Status == "Cancelled" ? "bg-danger" : "bg-secondary")">
+                        @activity.Status
+                    </span>
+                </td>
                 <td>
                     <a href="@Url.Action("Edit", "Activities", new { id = activity.Id })" class="btn btn-warning btn-sm">Edit</a>
-                    <a href="@Url.Action("Show", "Activities", new { id = activity.Id })" class="btn btn-info btn-sm">View</a> <!-- Corrected controller/action call -->
+                    <a href="@Url.Action("Show", "Activities", new { id = activity.Id })" class="btn btn-info btn-sm">View</a>
                     <a href="@Url.Action("Delete", "Activities", new { id = activity.Id })" class="btn btn-danger btn-sm">Delete</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+<!-- Pagination Controls -->
+@if (totalPages > 1)
+{
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == pageNumber ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { 
+                        ActivityName = ViewData["ActivityName"], 
+                        Organization = ViewData["Organization"], 
+                        Status = ViewData["Status"], 
+                        StartDate = ViewData["StartDate"], 
+                        EndDate = ViewData["EndDate"], 
+                        pageNumber = i, 
+                        pageSize = pageSize 
+                    })">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
+
+<!-- Page Size Selection -->
+<form method="get" class="mt-3">
+    <label for="pageSize">Records per page:</label>
+    <select name="pageSize" class="form-control w-auto d-inline" onchange="this.form.submit()">
+        @foreach (var size in new int[] { 5, 10, 15, 20 })
+        {
+            <option value="@size" selected="@(size == pageSize ? "selected" : null)">@size</option>
+        }
+    </select>
+    <input type="hidden" name="ActivityName" value="@ViewData["ActivityName"]" />
+    <input type="hidden" name="Organization" value="@ViewData["Organization"]" />
+    <input type="hidden" name="Status" value="@ViewData["Status"]" />
+    <input type="hidden" name="StartDate" value="@ViewData["StartDate"]" />
+    <input type="hidden" name="EndDate" value="@ViewData["EndDate"]" />
+</form>

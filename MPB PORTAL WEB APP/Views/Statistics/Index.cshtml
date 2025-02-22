@@ -14,16 +14,14 @@
         <canvas id="caseStatusChart"></canvas>
     </div>
 </div>
+
 <div class="row mt-4">
-    <div class="col-md-6">
-        <h5>Most Active Cities</h5>
-        <div id="citiesMap" style="height:400px;"></div>
-    </div>
     <div class="col-md-6">
         <h5>Most Active Organizations</h5>
         <canvas id="organizationsChart"></canvas>
     </div>
 </div>
+
 <h5 class="mt-4">Download Reports</h5>
 <form method="post" asp-action="DownloadReport">
     <select name="type" class="form-control">
@@ -35,11 +33,9 @@
 </form>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
     const activitiesData = @Html.Raw(Json.Serialize(ViewBag.ActivitiesPerMonth));
     const caseStatuses = @Html.Raw(Json.Serialize(ViewBag.CaseStatuses));
-    const citiesData = @Html.Raw(Json.Serialize(ViewBag.MostActiveCities));
     const orgsData = @Html.Raw(Json.Serialize(ViewBag.MostActiveOrganizations));
 
     // Activities Chart
@@ -82,14 +78,5 @@
             }]
         },
         options: { responsive: true, scales: { y: { beginAtZero: true } } }
-    });
-
-    // Leaflet Map
-    const map = L.map('citiesMap').setView([0, 0], 2);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
-
-    citiesData.forEach(city => {
-        L.marker([city.latitude || 0, city.longitude || 0]).addTo(map)
-         .bindPopup(`${city.location}: ${city.total} activities`);
     });
 </script>

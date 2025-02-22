@@ -19,9 +19,9 @@
     <div class="col-md-2">
         <select name="status" class="form-control">
             <option value="">All</option>
-            <option value="submitted">Submitted</option>
-            <option value="approved">Approved</option>
-            <option value="declined">Declined</option>
+            <option value="Submitted">Submitted</option>
+            <option value="Approved">Approved</option>
+            <option value="Declined">Declined</option>
         </select>
     </div>
     <div class="col-md-2">
@@ -35,7 +35,7 @@
     </div>
 </form>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
     <thead>
         <tr>
             <th>Title</th>
@@ -52,7 +52,11 @@
                 <td>@report.Title</td>
                 <td>@report.DateOfReport.ToShortDateString()</td>
                 <td>@report.Report_Made_By</td>
-                <td>@report.Status</td>
+                <td>
+                    <span class="badge @(report.Status == "Approved" ? "bg-success" : report.Status == "Declined" ? "bg-danger" : "bg-warning text-dark")">
+                        @report.Status
+                    </span>
+                </td>
                 <td>
                     <a asp-action="Show" asp-route-id="@report.Id" class="btn btn-info btn-sm">View</a>
                     <a asp-action="Edit" asp-route-id="@report.Id" class="btn btn-warning btn-sm">Edit</a>

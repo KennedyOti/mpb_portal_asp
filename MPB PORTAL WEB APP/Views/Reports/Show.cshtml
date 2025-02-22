@@ -6,15 +6,20 @@
 }
 
 <h2>Report Details</h2>
-<div class="card">
+<div class="card shadow">
     <div class="card-body">
         <p><strong>Title:</strong> @Model.Title</p>
         <p><strong>Date of Report:</strong> @Model.DateOfReport.ToString("dd MMM yyyy")</p>
         <p><strong>Submitted By:</strong> @Model.Report_Made_By</p>
-        <p><strong>Status:</strong> @Model.Status</p>
+        <p>
+            <strong>Status:</strong>
+            <span class="badge @(Model.Status == "Approved" ? "bg-success" : Model.Status == "Declined" ? "bg-danger" : "bg-warning text-dark")">
+                @Model.Status
+            </span>
+        </p>
         @if (!string.IsNullOrEmpty(Model.FilePath))
         {
-            <p><strong>File:</strong> <a href="~/@Model.FilePath" target="_blank">View Report</a></p>
+            <p><strong>File:</strong> <a href="~/@Model.FilePath" target="_blank" class="text-primary">View Report</a></p>
         }
         <a asp-action="Index" class="btn btn-secondary">Back to Reports</a>
     </div>

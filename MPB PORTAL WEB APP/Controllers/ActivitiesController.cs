@@ -23,7 +23,7 @@ namespace MPB_PORTAL_WEB_APP.Controllers
         }
 
         // INDEX - List and Filter Activities
-        public IActionResult Index(string ActivityName, string Organization, string Status, DateTime? StartDate, DateTime? EndDate)
+        public IActionResult Index(string ActivityName, string Organization, string Status, DateTime? StartDate, DateTime? EndDate, int pageNumber = 1, int pageSize = 10)
         {
             var activities = _context.Activities.AsQueryable();
 
@@ -42,13 +42,24 @@ namespace MPB_PORTAL_WEB_APP.Controllers
             if (EndDate.HasValue)
                 activities = activities.Where(a => a.EndDate <= EndDate);
 
+            // Pagination
+            int totalRecords = activities.Count();
+            var paginatedActivities = activities
+                .OrderBy(a => a.StartDate)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
             ViewData["ActivityName"] = ActivityName;
             ViewData["Organization"] = Organization;
             ViewData["Status"] = Status;
             ViewData["StartDate"] = StartDate?.ToString("yyyy-MM-dd");
             ViewData["EndDate"] = EndDate?.ToString("yyyy-MM-dd");
+            ViewData["TotalRecords"] = totalRecords;
+            ViewData["PageNumber"] = pageNumber;
+            ViewData["PageSize"] = pageSize;
 
-            return View(activities.ToList());
+            return View(paginatedActivities);
         }
 
         // CREATE - Show Form
@@ -64,11 +75,7 @@ namespace MPB_PORTAL_WEB_APP.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
-                foreach (var error in errors)
-                {
-                    Console.WriteLine(error);
-                }
+                TempData["ErrorMessage"] = "Please correct the errors and try again.";
                 return View(activity);
             }
 
@@ -79,7 +86,7 @@ namespace MPB_PORTAL_WEB_APP.Controllers
                 return View(activity);
             }
 
-            // Assign the logged-in user's full name to the Organization field
+            // Assign the logged-in user's full name to Organization
             activity.Organization = user.FullName;
 
             try
@@ -87,55 +94,92 @@ namespace MPB_PORTAL_WEB_APP.Controllers
                 _context.Activities.Add(activity);
                 await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Activity registered successfully.";
+                return RedirectToAction(nameof(Create));
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: " + ex.Message);
-                ModelState.AddModelError("", "Failed to save activity.");
+                TempData["ErrorMessage"] = $"Error occurred: {ex.Message}";
                 return View(activity);
             }
-
-            return RedirectToAction(nameof(Create));
         }
 
         // EDIT - Show Form
         [Authorize(Roles = "Admin")]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var activity = _context.Activities.Find(id);
-            if (activity == null) return NotFound();
+            var activity = await _context.Activities.FindAsync(id);
+            if (activity == null)
+            {
+                TempData["ErrorMessage"] = "Activity not found.";
+                return RedirectToAction(nameof(Index));
+            }
+
             return View(activity);
         }
 
-        // EDIT - Save Changes
+        // EDIT - Save Changes (Ensuring Organization is NOT Updated)
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, CountyActivity activity)
+        public async Task<IActionResult> Edit(int id, CountyActivity updatedActivity)
         {
-            if (id != activity.Id) return NotFound();
-
-            if (ModelState.IsValid)
+            if (id != updatedActivity.Id)
             {
-                try
-                {
-                    _context.Update(activity);
-                    await _context.SaveChangesAsync();
-                    TempData["SuccessMessage"] = "Activity updated successfully.";
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!_context.Activities.Any(e => e.Id == activity.Id))
-                        return NotFound();
-                    else
-                        throw;
-                }
-                return RedirectToAction(nameof(Index));
+                TempData["ErrorMessage"] = "Invalid Activity ID.";
+                return NotFound();
             }
-            return View(activity);
-        }
 
-        // DELETE - Confirm
+            if (!ModelState.IsValid)
+            {
+                TempData["ErrorMessage"] = "Please correct the errors and try again.";
+                return View(updatedActivity);
+            }
+
+            try
+            {
+                var existingActivity = await _context.Activities.FindAsync(id);
+                if (existingActivity == null)
+                {
+                    TempData["ErrorMessage"] = "Activity not found.";
+                    return NotFound();
+                }
+
+                // Update fields except Organization
+                existingActivity.ActivityName = updatedActivity.ActivityName;
+                existingActivity.ActivityDescription = updatedActivity.ActivityDescription;
+                existingActivity.Location = updatedActivity.Location;
+                existingActivity.StartDate = updatedActivity.StartDate;
+                existingActivity.EndDate = updatedActivity.EndDate;
+                existingActivity.ActualBeneficiaries = updatedActivity.ActualBeneficiaries;
+                existingActivity.ExpectedBeneficiaries = updatedActivity.ExpectedBeneficiaries;
+                existingActivity.Status = updatedActivity.Status;
+
+                _context.Update(existingActivity);
+                await _context.SaveChangesAsync();
+
+                TempData["SuccessMessage"] = "Activity updated successfully.";
+                return RedirectToAction(nameof(Edit), new { id = existingActivity.Id });
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Activities.Any(e => e.Id == updatedActivity.Id))
+                {
+                    TempData["ErrorMessage"] = "Activity no longer exists.";
+                    return NotFound();
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "Concurrency error. Please try again.";
+                    throw;
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"An error occurred: {ex.Message}";
+                return View(updatedActivity);
+            }
+        }
+        // EDIT - Save Changes 
         [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
@@ -160,10 +204,15 @@ namespace MPB_PORTAL_WEB_APP.Controllers
         }
 
         // SHOW - Activity Details
-        public IActionResult Show(int id)
+        public async Task<IActionResult> Show(int id)
         {
-            var activity = _context.Activities.Find(id);
-            if (activity == null) return NotFound();
+            var activity = await _context.Activities.FindAsync(id);
+            if (activity == null)
+            {
+                TempData["ErrorMessage"] = "Activity not found.";
+                return RedirectToAction(nameof(Index));
+            }
+
             return View(activity);
         }
     }

@@ -121,8 +121,8 @@ namespace MPB_PORTAL_WEB_APP.Controllers
                 Id = report.Id,
                 Title = report.Title,
                 DateOfReport = report.DateOfReport,
-                Status = report.Status,
-                FilePath = report.FilePath // Include the current file path
+                Status = report.Status ?? "Submitted", // Default to "Submitted" if null
+                FilePath = report.FilePath
             };
             return View(model);
         }
@@ -154,33 +154,33 @@ namespace MPB_PORTAL_WEB_APP.Controllers
                     return NotFound();
                 }
 
+                // Update Report Fields
                 report.Title = model.Title;
                 report.DateOfReport = model.DateOfReport;
-                report.Status = model.Status;
+                report.Status = model.Status ?? "submitted"; // Ensures status is not null
 
+                // Handle File Upload
                 if (model.File != null)
                 {
                     var uploadsFolder = Path.Combine("wwwroot/reports");
-                    Directory.CreateDirectory(uploadsFolder);  // Ensure directory exists
+                    Directory.CreateDirectory(uploadsFolder);
 
-                    var filePath = Path.Combine(uploadsFolder, Guid.NewGuid().ToString() + Path.GetExtension(model.File.FileName));
+                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(model.File.FileName);
+                    var filePath = Path.Combine(uploadsFolder, fileName);
 
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         await model.File.CopyToAsync(stream);
                     }
 
-                    report.FilePath = filePath.Replace("wwwroot/", "");
-                }
-                else
-                {
-                    report.FilePath = model.FilePath;  // Retain existing file path if no new file uploaded
+                    report.FilePath = "reports/" + fileName;
                 }
 
                 _context.Reports.Update(report);
                 await _context.SaveChangesAsync();
+
                 TempData["SuccessMessage"] = "Report updated successfully.";
-                return RedirectToAction(nameof(Edit));
+                return RedirectToAction(nameof(Edit), new { id = report.Id });
             }
             catch (Exception ex)
             {
@@ -188,7 +188,6 @@ namespace MPB_PORTAL_WEB_APP.Controllers
                 return View(model);
             }
         }
-
 
 
         // DELETE - Confirm

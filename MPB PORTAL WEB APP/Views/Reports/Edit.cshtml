@@ -7,12 +7,29 @@
 
 <h2>Edit Report</h2>
 
-<div class="card">
+<!-- Success/Error Messages (Auto Fade) -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="card shadow">
     <div class="card-body">
         <form asp-action="Edit" method="post" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
             <input type="hidden" asp-for="Id" />
-            <input type="hidden" asp-for="FilePath" />  <!-- Hidden to retain file path -->
+            <input type="hidden" asp-for="FilePath" />
 
             <div class="mb-3">
                 <label asp-for="Title" class="form-label">Report Title</label>
@@ -26,11 +43,23 @@
                 <span asp-validation-for="DateOfReport" class="text-danger"></span>
             </div>
 
+            <!-- Status with Color Indicator -->
+            <div class="mb-3">
+                <label class="form-label">Status</label>
+                <select asp-for="Status" class="form-control status-select">
+                    <option value="Submitted" selected>Submitted</option>
+                    <option value="Approved">Approved</option>
+                    <option value="Declined">Declined</option>
+                </select>
+                <span id="status-indicator" class="badge bg-warning text-dark">Submitted</span>
+            </div>
+
+            <!-- File Upload -->
             @if (!string.IsNullOrEmpty(Model.FilePath))
             {
                 <div class="mb-3">
                     <label class="form-label">Current File:</label>
-                    <a href="~/@Model.FilePath" target="_blank">View Current File</a>
+                    <a href="~/@Model.FilePath" target="_blank" class="text-primary">View Current File</a>
                 </div>
             }
 
@@ -40,8 +69,41 @@
                 <span asp-validation-for="File" class="text-danger"></span>
             </div>
 
+            <!-- Buttons -->
             <button type="submit" class="btn btn-primary">Save Changes</button>
             <a asp-action="Index" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </div>
+
+<!-- JavaScript for Auto Dismiss Alerts and Status Color Change -->
+<script>
+    // Auto dismiss alerts
+    setTimeout(() => {
+        let alerts = document.querySelectorAll('.alert');
+        alerts.forEach(alert => {
+            alert.classList.remove('show');
+            alert.classList.add('fade');
+            setTimeout(() => alert.remove(), 500);
+        });
+    }, 3000);
+
+    // Status color change
+    function updateStatusIndicator() {
+        const statusSelect = document.querySelector(".status-select");
+        const statusIndicator = document.getElementById("status-indicator");
+
+        const statusColorMap = {
+            "Submitted": { color: "bg-warning text-dark", label: "Submitted 🟡" },
+            "Approved": { color: "bg-success text-white", label: "Approved ✅" },
+            "Declined": { color: "bg-danger text-white", label: "Declined ❌" }
+        };
+
+        const selectedStatus = statusSelect.value;
+        statusIndicator.className = `badge ${statusColorMap[selectedStatus].color}`;
+        statusIndicator.innerHTML = statusColorMap[selectedStatus].label;
+    }
+
+    document.querySelector(".status-select").addEventListener("change", updateStatusIndicator);
+    updateStatusIndicator(); // Set initial color on page load
+</script>

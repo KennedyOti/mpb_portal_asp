@@ -26,12 +26,12 @@ namespace MPB_PORTAL_WEB_APP.Controllers
             _userManager = userManager;
         }
 
-        // INDEX: List and filter cases
-        public async Task<IActionResult> Index(string clientName, string description, string assignedStaffId, string status, DateTime? startDateFrom, DateTime? startDateTo)
+        // INDEX: List and filter cases with Pagination
+        public async Task<IActionResult> Index(string clientName, string description, string assignedStaffId, string status, DateTime? startDateFrom, DateTime? startDateTo, int pageSize = 10)
         {
             var cases = _context.Cases.Include(c => c.AssignedStaff).AsQueryable();
 
-            // Apply filters...
+            // Apply filters
             if (!string.IsNullOrEmpty(clientName))
                 cases = cases.Where(c => c.ClientName.Contains(clientName));
 
@@ -50,12 +50,23 @@ namespace MPB_PORTAL_WEB_APP.Controllers
             if (startDateTo.HasValue)
                 cases = cases.Where(c => c.StartDate <= startDateTo);
 
+            // Pagination logic
+            int totalRecords = await cases.CountAsync();
+            cases = cases.Take(pageSize); // Only take the number of records based on selected pageSize
+
             // Fetch staff members for dropdown
             ViewBag.StaffMembers = await _context.Users.ToListAsync();
+            ViewData["ClientName"] = clientName;
+            ViewData["Description"] = description;
+            ViewData["AssignedStaffId"] = assignedStaffId;
+            ViewData["Status"] = status;
+            ViewData["StartDateFrom"] = startDateFrom?.ToString("yyyy-MM-dd");
+            ViewData["StartDateTo"] = startDateTo?.ToString("yyyy-MM-dd");
+            ViewData["PageSize"] = pageSize;
+            ViewData["TotalRecords"] = totalRecords;
 
             return View(await cases.ToListAsync());
         }
-
 
         // CREATE: Show form
         public async Task<IActionResult> Create()

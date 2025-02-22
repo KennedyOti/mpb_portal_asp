@@ -185,3 +185,4 @@ C:\Users\otien\source\repos\MPB PORTAL WEB APP\MPB PORTAL WEB APP\bin\Debug\net8
 C:\Users\otien\source\repos\MPB PORTAL WEB APP\MPB PORTAL WEB APP\bin\Debug\net8.0\SendGrid.dll
 C:\Users\otien\source\repos\MPB PORTAL WEB APP\MPB PORTAL WEB APP\bin\Debug\net8.0\StarkbankEcdsa.dll
 C:\Users\otien\source\repos\MPB PORTAL WEB APP\MPB PORTAL WEB APP\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+C:\Users\otien\source\repos\MPB PORTAL WEB APP\MPB PORTAL WEB APP\obj\Debug\net8.0\mpbapp.sourcelink.json

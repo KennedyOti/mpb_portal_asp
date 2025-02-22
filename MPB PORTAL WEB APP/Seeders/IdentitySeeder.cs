@@ -22,7 +22,7 @@ namespace MPB_PORTAL_WEB_APP.Seeders
 
         public static async Task SeedAdminUser(UserManager<Users> userManager)
         {
-            string adminEmail = "admin1@mpbportal.com";
+            string adminEmail = "uardamehmeti@gmail.com";
             string adminPassword = "Admin@1234";
 
             var adminUser = await userManager.FindByEmailAsync(adminEmail);
@@ -32,7 +32,7 @@ namespace MPB_PORTAL_WEB_APP.Seeders
                 {
                     UserName = adminEmail,
                     Email = adminEmail,
-                    FullName = "System Admin",
+                    FullName = "Uarda mehmeti",
                     EmailConfirmed = true
                 };
 

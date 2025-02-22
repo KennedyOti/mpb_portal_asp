@@ -756,12 +756,120 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\js\script.js'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\3abe5c87-f187-4a1b-846d-485ee590a873.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\087e3acb-0c9d-44c0-a41c-6d9b33178868.docx'))">
       <SourceType>Package</SourceType>
       <SourceId>mpbapp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/mpbapp</BasePath>
-      <RelativePath>attachments/3abe5c87-f187-4a1b-846d-485ee590a873.png</RelativePath>
+      <RelativePath>attachments/087e3acb-0c9d-44c0-a41c-6d9b33178868.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hlhtqmyvz0</Fingerprint>
+      <Integrity>q69Z/dzYbdmjzdB92/fsKcvdSgj4HaY2Zb/8E4N2JDo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\087e3acb-0c9d-44c0-a41c-6d9b33178868.docx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\399b281e-506a-4cde-b7c8-ad52add7ea5a.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/399b281e-506a-4cde-b7c8-ad52add7ea5a.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6vqj7l6tfo</Fingerprint>
+      <Integrity>PnbYfTLC4bv83l2EwzxZPaofTSSaaTw47TRQYZbuX/Q=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\399b281e-506a-4cde-b7c8-ad52add7ea5a.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\43e8896b-5426-4f95-bbe3-2eac556ceae5.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/43e8896b-5426-4f95-bbe3-2eac556ceae5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>e0lb6lpyki</Fingerprint>
+      <Integrity>HomqglKFIFIcJ0AaoZNL1g6UTpcQ0Osdzo8jPWojPL0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\43e8896b-5426-4f95-bbe3-2eac556ceae5.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\45d341ca-d6d8-4062-99cf-0c28be80eb30.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/45d341ca-d6d8-4062-99cf-0c28be80eb30.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6vqj7l6tfo</Fingerprint>
+      <Integrity>PnbYfTLC4bv83l2EwzxZPaofTSSaaTw47TRQYZbuX/Q=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\45d341ca-d6d8-4062-99cf-0c28be80eb30.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\54a111ee-d39f-4bec-a3df-8664b043e229.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/54a111ee-d39f-4bec-a3df-8664b043e229.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6vc3g2auwl</Fingerprint>
+      <Integrity>4tv3+fH+feEy2k/kGE4RNQwsgQhOH9CRsSrBkkUMpZo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\54a111ee-d39f-4bec-a3df-8664b043e229.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\7142f35f-df5e-4343-83ec-afb3aab74f4a.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/7142f35f-df5e-4343-83ec-afb3aab74f4a.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>70namxsl0c</Fingerprint>
+      <Integrity>CXNEe8iNLoS3nVCqK1dBG4nUXhZTo/DjBfQJ2b6AYV0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\7142f35f-df5e-4343-83ec-afb3aab74f4a.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\7e37d9a2-9b36-4c72-a2f1-3b29c8944611.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/7e37d9a2-9b36-4c72-a2f1-3b29c8944611.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -772,7 +880,25 @@
       <Integrity>bUnMtHYaom6q0ziDLbnZ5TT2l6DZhWtnddzEupuYxUw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\3abe5c87-f187-4a1b-846d-485ee590a873.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\7e37d9a2-9b36-4c72-a2f1-3b29c8944611.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\aa80cc5f-ad50-401f-a843-e46b36ca8e04.docx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/aa80cc5f-ad50-401f-a843-e46b36ca8e04.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xlfwm85uf7</Fingerprint>
+      <Integrity>+yJOvKf1C7GGgXml5NdkEG78UL+HIXntrOTQjE/q0Ew=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\aa80cc5f-ad50-401f-a843-e46b36ca8e04.docx'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\af2cd94e-91f2-4024-86be-4b3d43373080.png'))">
       <SourceType>Package</SourceType>
@@ -809,6 +935,60 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\db2566d0-4e41-442d-acd8-3bb76c2398dc.docx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\dc2ff29b-ad19-4da4-9a18-8125c07eeaa4.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/dc2ff29b-ad19-4da4-9a18-8125c07eeaa4.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qzlo1ky85k</Fingerprint>
+      <Integrity>VhYnVfmakvMxdozJ7e8/4GwQxEnt7r4kA3F43O0XKh0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\dc2ff29b-ad19-4da4-9a18-8125c07eeaa4.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\e4eb2098-e930-4f03-9b2c-8a50bd63bd00.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/e4eb2098-e930-4f03-9b2c-8a50bd63bd00.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>s8kwnnx0q5</Fingerprint>
+      <Integrity>fHHI25W4Ez59hCb0lg5fHTfeRXy59TJsAwj52SXTnfI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\e4eb2098-e930-4f03-9b2c-8a50bd63bd00.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\fc6290f6-772a-4f29-b4a9-41772a1ebc78.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/fc6290f6-772a-4f29-b4a9-41772a1ebc78.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zbo5593wzq</Fingerprint>
+      <Integrity>byMUNB+KuZlIzIR4OKVBkGIxtp30JZtGxFj+Y51k24g=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\fc6290f6-772a-4f29-b4a9-41772a1ebc78.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\account.css'))">
       <SourceType>Package</SourceType>
@@ -1944,24 +2124,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\21efb598-ca74-42c6-bfa7-2b588b487e47.docx'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\26d25a3a-b8c6-4424-b539-18d78fbce3ff.pdf'))">
-      <SourceType>Package</SourceType>
-      <SourceId>mpbapp</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/mpbapp</BasePath>
-      <RelativePath>reports/26d25a3a-b8c6-4424-b539-18d78fbce3ff.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ipfh2dxz7s</Fingerprint>
-      <Integrity>xs/EILsEUYgV0OodyqMGnvaKCGru8SVSvKiBusBqQ0Y=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\26d25a3a-b8c6-4424-b539-18d78fbce3ff.pdf'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\2800cb5c-f702-4939-b59a-9a56d7742674.docx'))">
       <SourceType>Package</SourceType>
       <SourceId>mpbapp</SourceId>
@@ -1979,6 +2141,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\2800cb5c-f702-4939-b59a-9a56d7742674.docx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\2a605ba4-e59c-473e-a175-24a866c3a9f7.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/2a605ba4-e59c-473e-a175-24a866c3a9f7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ivghgjpivd</Fingerprint>
+      <Integrity>UkRjHr5IGkDVZsUDFRVH/De84nQB9NGLctQOwEFB+pI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\2a605ba4-e59c-473e-a175-24a866c3a9f7.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\2a68b2ef-5201-423c-9210-e5cbedc1907a.pdf'))">
       <SourceType>Package</SourceType>
@@ -1998,6 +2178,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\2a68b2ef-5201-423c-9210-e5cbedc1907a.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\44b52c99-1180-4bdb-b7d6-f18fb5ef8427.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/44b52c99-1180-4bdb-b7d6-f18fb5ef8427.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>euq6j9pft8</Fingerprint>
+      <Integrity>ZtRmsVocAWgg6jpyHU7ng+zQXeybEh+CLEoubE134mk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\44b52c99-1180-4bdb-b7d6-f18fb5ef8427.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\4e48171f-72f1-4d3b-a20f-dfaa27b97fb6.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>mpbapp</SourceId>
@@ -2016,6 +2214,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\4e48171f-72f1-4d3b-a20f-dfaa27b97fb6.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\55052f9a-8d1f-47a8-8f32-de0a0518a087.docx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/55052f9a-8d1f-47a8-8f32-de0a0518a087.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9rq6hnmars</Fingerprint>
+      <Integrity>C+Yd0rcAY+HxpowBIHuqGOzVmpUVAfw/HYQRDU/IK4U=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\55052f9a-8d1f-47a8-8f32-de0a0518a087.docx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\5efa6412-b7d6-4b7c-b466-adaf1697fce1.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/5efa6412-b7d6-4b7c-b466-adaf1697fce1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bu4ewl0uoj</Fingerprint>
+      <Integrity>/duyIBh9TWaxiS+Cj7aEPm/7x1EiuMl1Ci5Hjr9uVSU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\5efa6412-b7d6-4b7c-b466-adaf1697fce1.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\6e7402bf-a6ef-4b0e-b267-4362d698ef04.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>mpbapp</SourceId>
@@ -2033,6 +2267,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\6e7402bf-a6ef-4b0e-b267-4362d698ef04.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\6fb60952-6f33-4209-86de-9518fecb1f0e.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/6fb60952-6f33-4209-86de-9518fecb1f0e.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bqznh8jge1</Fingerprint>
+      <Integrity>XeqRY5KGH7Sz8jRYqVALgWwk+5qFxkO7bNHV/JiohhM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\6fb60952-6f33-4209-86de-9518fecb1f0e.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\ae505a78-208e-4fd2-adf9-20095d4f5dfe.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/ae505a78-208e-4fd2-adf9-20095d4f5dfe.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9eftac3c15</Fingerprint>
+      <Integrity>MR1it25+SVVvfgfl4ZajghKJdxM4eVpR9T/WUFW677k=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\ae505a78-208e-4fd2-adf9-20095d4f5dfe.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\b4fed5d4-3b89-4e11-9b27-9f82cb926343.docx'))">
       <SourceType>Package</SourceType>
@@ -2087,6 +2357,96 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\cb4dc89a-de34-4383-84b9-edc3444d295e.docx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\e1bd97d5-36e3-4757-a7e3-33baacfd26b3.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/e1bd97d5-36e3-4757-a7e3-33baacfd26b3.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bqznh8jge1</Fingerprint>
+      <Integrity>XeqRY5KGH7Sz8jRYqVALgWwk+5qFxkO7bNHV/JiohhM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\e1bd97d5-36e3-4757-a7e3-33baacfd26b3.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\e83133db-642e-4d5a-890f-fdf8044e6aa9.docx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/e83133db-642e-4d5a-890f-fdf8044e6aa9.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>h424kn9vy4</Fingerprint>
+      <Integrity>P3ykRdcfE3CcUsMZplOROXcHdEN6wdio6cW5k4NSunc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\e83133db-642e-4d5a-890f-fdf8044e6aa9.docx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\f8081422-20d2-4e79-b3ca-f20f58a1b10e.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/f8081422-20d2-4e79-b3ca-f20f58a1b10e.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zbo5593wzq</Fingerprint>
+      <Integrity>byMUNB+KuZlIzIR4OKVBkGIxtp30JZtGxFj+Y51k24g=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\f8081422-20d2-4e79-b3ca-f20f58a1b10e.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\fa206ccb-491a-4b62-8b42-78814401a4f1.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/fa206ccb-491a-4b62-8b42-78814401a4f1.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bu4ewl0uoj</Fingerprint>
+      <Integrity>/duyIBh9TWaxiS+Cj7aEPm/7x1EiuMl1Ci5Hjr9uVSU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\fa206ccb-491a-4b62-8b42-78814401a4f1.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\fbfb145c-5254-429a-a271-b9ea0402dc09.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>reports/fbfb145c-5254-429a-a271-b9ea0402dc09.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zbo5593wzq</Fingerprint>
+      <Integrity>byMUNB+KuZlIzIR4OKVBkGIxtp30JZtGxFj+Y51k24g=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\reports\fbfb145c-5254-429a-a271-b9ea0402dc09.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

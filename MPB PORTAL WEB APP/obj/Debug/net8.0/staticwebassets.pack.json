@@ -173,8 +173,36 @@
       "PackagePath": "staticwebassets\\assets\\js\\script.js"
     },
     {
-      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\3abe5c87-f187-4a1b-846d-485ee590a873.png",
-      "PackagePath": "staticwebassets\\attachments\\3abe5c87-f187-4a1b-846d-485ee590a873.png"
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\087e3acb-0c9d-44c0-a41c-6d9b33178868.docx",
+      "PackagePath": "staticwebassets\\attachments\\087e3acb-0c9d-44c0-a41c-6d9b33178868.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\399b281e-506a-4cde-b7c8-ad52add7ea5a.pdf",
+      "PackagePath": "staticwebassets\\attachments\\399b281e-506a-4cde-b7c8-ad52add7ea5a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\43e8896b-5426-4f95-bbe3-2eac556ceae5.jpg",
+      "PackagePath": "staticwebassets\\attachments\\43e8896b-5426-4f95-bbe3-2eac556ceae5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\45d341ca-d6d8-4062-99cf-0c28be80eb30.pdf",
+      "PackagePath": "staticwebassets\\attachments\\45d341ca-d6d8-4062-99cf-0c28be80eb30.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\54a111ee-d39f-4bec-a3df-8664b043e229.jpg",
+      "PackagePath": "staticwebassets\\attachments\\54a111ee-d39f-4bec-a3df-8664b043e229.jpg"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\7142f35f-df5e-4343-83ec-afb3aab74f4a.pdf",
+      "PackagePath": "staticwebassets\\attachments\\7142f35f-df5e-4343-83ec-afb3aab74f4a.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\7e37d9a2-9b36-4c72-a2f1-3b29c8944611.png",
+      "PackagePath": "staticwebassets\\attachments\\7e37d9a2-9b36-4c72-a2f1-3b29c8944611.png"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\aa80cc5f-ad50-401f-a843-e46b36ca8e04.docx",
+      "PackagePath": "staticwebassets\\attachments\\aa80cc5f-ad50-401f-a843-e46b36ca8e04.docx"
     },
     {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\af2cd94e-91f2-4024-86be-4b3d43373080.png",
@@ -183,6 +211,18 @@
     {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\db2566d0-4e41-442d-acd8-3bb76c2398dc.docx",
       "PackagePath": "staticwebassets\\attachments\\db2566d0-4e41-442d-acd8-3bb76c2398dc.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\dc2ff29b-ad19-4da4-9a18-8125c07eeaa4.xlsx",
+      "PackagePath": "staticwebassets\\attachments\\dc2ff29b-ad19-4da4-9a18-8125c07eeaa4.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\e4eb2098-e930-4f03-9b2c-8a50bd63bd00.jpg",
+      "PackagePath": "staticwebassets\\attachments\\e4eb2098-e930-4f03-9b2c-8a50bd63bd00.jpg"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\fc6290f6-772a-4f29-b4a9-41772a1ebc78.pdf",
+      "PackagePath": "staticwebassets\\attachments\\fc6290f6-772a-4f29-b4a9-41772a1ebc78.pdf"
     },
     {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\css\\account.css",
@@ -433,24 +473,44 @@
       "PackagePath": "staticwebassets\\reports\\21efb598-ca74-42c6-bfa7-2b588b487e47.docx"
     },
     {
-      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\26d25a3a-b8c6-4424-b539-18d78fbce3ff.pdf",
-      "PackagePath": "staticwebassets\\reports\\26d25a3a-b8c6-4424-b539-18d78fbce3ff.pdf"
-    },
-    {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\2800cb5c-f702-4939-b59a-9a56d7742674.docx",
       "PackagePath": "staticwebassets\\reports\\2800cb5c-f702-4939-b59a-9a56d7742674.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\2a605ba4-e59c-473e-a175-24a866c3a9f7.pdf",
+      "PackagePath": "staticwebassets\\reports\\2a605ba4-e59c-473e-a175-24a866c3a9f7.pdf"
     },
     {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\2a68b2ef-5201-423c-9210-e5cbedc1907a.pdf",
       "PackagePath": "staticwebassets\\reports\\2a68b2ef-5201-423c-9210-e5cbedc1907a.pdf"
     },
     {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\44b52c99-1180-4bdb-b7d6-f18fb5ef8427.pdf",
+      "PackagePath": "staticwebassets\\reports\\44b52c99-1180-4bdb-b7d6-f18fb5ef8427.pdf"
+    },
+    {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\4e48171f-72f1-4d3b-a20f-dfaa27b97fb6.pdf",
       "PackagePath": "staticwebassets\\reports\\4e48171f-72f1-4d3b-a20f-dfaa27b97fb6.pdf"
     },
     {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\55052f9a-8d1f-47a8-8f32-de0a0518a087.docx",
+      "PackagePath": "staticwebassets\\reports\\55052f9a-8d1f-47a8-8f32-de0a0518a087.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\5efa6412-b7d6-4b7c-b466-adaf1697fce1.pdf",
+      "PackagePath": "staticwebassets\\reports\\5efa6412-b7d6-4b7c-b466-adaf1697fce1.pdf"
+    },
+    {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\6e7402bf-a6ef-4b0e-b267-4362d698ef04.pdf",
       "PackagePath": "staticwebassets\\reports\\6e7402bf-a6ef-4b0e-b267-4362d698ef04.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\6fb60952-6f33-4209-86de-9518fecb1f0e.pdf",
+      "PackagePath": "staticwebassets\\reports\\6fb60952-6f33-4209-86de-9518fecb1f0e.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\ae505a78-208e-4fd2-adf9-20095d4f5dfe.pdf",
+      "PackagePath": "staticwebassets\\reports\\ae505a78-208e-4fd2-adf9-20095d4f5dfe.pdf"
     },
     {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\b4fed5d4-3b89-4e11-9b27-9f82cb926343.docx",
@@ -463,6 +523,26 @@
     {
       "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\cb4dc89a-de34-4383-84b9-edc3444d295e.docx",
       "PackagePath": "staticwebassets\\reports\\cb4dc89a-de34-4383-84b9-edc3444d295e.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\e1bd97d5-36e3-4757-a7e3-33baacfd26b3.pdf",
+      "PackagePath": "staticwebassets\\reports\\e1bd97d5-36e3-4757-a7e3-33baacfd26b3.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\e83133db-642e-4d5a-890f-fdf8044e6aa9.docx",
+      "PackagePath": "staticwebassets\\reports\\e83133db-642e-4d5a-890f-fdf8044e6aa9.docx"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\f8081422-20d2-4e79-b3ca-f20f58a1b10e.pdf",
+      "PackagePath": "staticwebassets\\reports\\f8081422-20d2-4e79-b3ca-f20f58a1b10e.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\fa206ccb-491a-4b62-8b42-78814401a4f1.pdf",
+      "PackagePath": "staticwebassets\\reports\\fa206ccb-491a-4b62-8b42-78814401a4f1.pdf"
+    },
+    {
+      "Id": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\fbfb145c-5254-429a-a271-b9ea0402dc09.pdf",
+      "PackagePath": "staticwebassets\\reports\\fbfb145c-5254-429a-a271-b9ea0402dc09.pdf"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.mpbapp.props",

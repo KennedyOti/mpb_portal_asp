@@ -2,6 +2,12 @@
 @{
     Layout = "~/Views/Shared/_PortalLayout.cshtml";
     ViewData["Title"] = "Cases List";
+
+    // Pagination Variables
+    int pageNumber = ViewData["PageNumber"] as int? ?? 1;
+    int pageSize = ViewData["PageSize"] as int? ?? 10;
+    int totalRecords = ViewData["TotalRecords"] as int? ?? 0;
+    int totalPages = (int)Math.Ceiling((double)totalRecords / pageSize);
 }
 
 <h2>Cases List</h2>
@@ -18,33 +24,33 @@
 <form method="get" class="mb-4">
     <div class="row g-3">
         <div class="col-md-3">
-            <input type="text" name="clientName" class="form-control" placeholder="Client Name" value="@Context.Request.Query["clientName"]">
+            <input type="text" name="clientName" class="form-control" placeholder="Client Name" value="@ViewData["ClientName"]">
         </div>
         <div class="col-md-3">
-            <input type="text" name="description" class="form-control" placeholder="Description" value="@Context.Request.Query["description"]">
+            <input type="text" name="description" class="form-control" placeholder="Description" value="@ViewData["Description"]">
         </div>
         <div class="col-md-3">
             <select name="assignedStaffId" class="form-select">
                 <option value="">All Staff</option>
                 @foreach (var staff in ViewBag.StaffMembers)
                 {
-                    <option value="@staff.Id" selected="@(Context.Request.Query["assignedStaffId"] == staff.Id ? "selected" : null)">@staff.FullName</option>
+                    <option value="@staff.Id" selected="@(ViewData["AssignedStaffId"]?.ToString() == staff.Id ? "selected" : null)">@staff.FullName</option>
                 }
             </select>
         </div>
         <div class="col-md-2">
             <select name="status" class="form-select">
                 <option value="">All Status</option>
-                <option value="pending" selected="@(Context.Request.Query["status"] == "pending" ? "selected" : null)">Pending</option>
-                <option value="in_progress" selected="@(Context.Request.Query["status"] == "in_progress" ? "selected" : null)">In Progress</option>
-                <option value="resolved" selected="@(Context.Request.Query["status"] == "resolved" ? "selected" : null)">Resolved</option>
+                <option value="pending" selected="@(ViewData["Status"]?.ToString() == "pending" ? "selected" : null)">Pending</option>
+                <option value="in_progress" selected="@(ViewData["Status"]?.ToString() == "in_progress" ? "selected" : null)">In Progress</option>
+                <option value="resolved" selected="@(ViewData["Status"]?.ToString() == "resolved" ? "selected" : null)">Resolved</option>
             </select>
         </div>
         <div class="col-md-2">
-            <input type="date" name="startDateFrom" class="form-control" value="@Context.Request.Query["startDateFrom"]">
+            <input type="date" name="startDateFrom" class="form-control" value="@ViewData["StartDateFrom"]">
         </div>
         <div class="col-md-2">
-            <input type="date" name="startDateTo" class="form-control" value="@Context.Request.Query["startDateTo"]">
+            <input type="date" name="startDateTo" class="form-control" value="@ViewData["StartDateTo"]">
         </div>
         <div class="col-md-2">
             <button type="submit" class="btn btn-primary">Filter</button>
@@ -75,8 +81,15 @@
                 <td>@item.Id</td>
                 <td>@item.ClientName</td>
                 <td>@Html.Raw(item.Description.Length > 50 ? item.Description.Substring(0, 50) + "..." : item.Description)</td>
-                <td>@item.AssignedStaff?.FullName</td> <!-- Display staff name -->
-                <td><span class="badge bg-@(item.Status == "pending" ? "warning" : item.Status == "in_progress" ? "info" : "success")">@item.Status</span></td>
+                <td>@item.AssignedStaff?.FullName</td>
+                <td>
+                    <span class="badge
+                        @(item.Status == "pending" ? "bg-warning text-dark" :
+                          item.Status == "in_progress" ? "bg-info" :
+                          item.Status == "resolved" ? "bg-success" : "bg-secondary")">
+                        @item.Status
+                    </span>
+                </td>
                 <td>@item.StartDate.ToString("yyyy-MM-dd")</td>
                 <td>@(item.EndDate?.ToString("yyyy-MM-dd") ?? "N/A")</td>
                 <td>
@@ -88,3 +101,18 @@
         }
     </tbody>
 </table>
+
+<!-- Pagination -->
+@if (totalPages > 1)
+{
+    <nav>
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == pageNumber ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { pageNumber = i, pageSize = pageSize })">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
