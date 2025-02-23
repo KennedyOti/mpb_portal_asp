@@ -774,6 +774,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\087e3acb-0c9d-44c0-a41c-6d9b33178868.docx'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>mpbapp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/mpbapp</BasePath>
+      <RelativePath>attachments/29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mlrle4jqr1</Fingerprint>
+      <Integrity>+oxQEL0VsYYgIYiiB8O/srEC2gWVs1SrBgku1Ucfj8Q=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\attachments\399b281e-506a-4cde-b7c8-ad52add7ea5a.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>mpbapp</SourceId>

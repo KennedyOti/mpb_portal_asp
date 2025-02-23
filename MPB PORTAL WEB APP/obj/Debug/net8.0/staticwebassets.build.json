@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jo4OjdA4o/hGR8AkBf0bwX2OvmnMfEuIACkG9UsU8pE=",
+  "Hash": "WcHAQ6Opc1G1KLnE6DqAa2Q9b3l29orP5L5DhzGFQI8=",
   "Source": "mpbapp",
   "BasePath": "_content/mpbapp",
   "Mode": "Default",
@@ -960,6 +960,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\attachments\\087e3acb-0c9d-44c0-a41c-6d9b33178868.docx"
+    },
+    {
+      "Identity": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg",
+      "SourceId": "mpbapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\",
+      "BasePath": "_content/mpbapp",
+      "RelativePath": "attachments/29534934-7b80-41a7-9f1e-9e1e4bfd248a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mlrle4jqr1",
+      "Integrity": "+oxQEL0VsYYgIYiiB8O/srEC2gWVs1SrBgku1Ucfj8Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\attachments\\29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg"
     },
     {
       "Identity": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\399b281e-506a-4cde-b7c8-ad52add7ea5a.pdf",
@@ -6418,6 +6439,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-q69Z/dzYbdmjzdB92/fsKcvdSgj4HaY2Zb/8E4N2JDo="
+        }
+      ]
+    },
+    {
+      "Route": "attachments/29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg",
+      "AssetFile": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "171824"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+oxQEL0VsYYgIYiiB8O/srEC2gWVs1SrBgku1Ucfj8Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 05:24:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+oxQEL0VsYYgIYiiB8O/srEC2gWVs1SrBgku1Ucfj8Q="
+        }
+      ]
+    },
+    {
+      "Route": "attachments/29534934-7b80-41a7-9f1e-9e1e4bfd248a.mlrle4jqr1.jpg",
+      "AssetFile": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\attachments\\29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "171824"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+oxQEL0VsYYgIYiiB8O/srEC2gWVs1SrBgku1Ucfj8Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 05:24:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mlrle4jqr1"
+        },
+        {
+          "Name": "label",
+          "Value": "attachments/29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+oxQEL0VsYYgIYiiB8O/srEC2gWVs1SrBgku1Ucfj8Q="
         }
       ]
     },

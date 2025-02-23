@@ -9,8 +9,8 @@ namespace MPB_PORTAL_WEB_APP.Services
     {
         private readonly string smtpServer = "smtp.gmail.com"; // Gmail SMTP
         private readonly int smtpPort = 587; // TLS Port
-        private readonly string smtpUser = "kennedyotieno3750@gmail.com";  // Your email
-        private readonly string smtpPass = "kqhj kxyg qwha olou"; // Use app password
+        private readonly string smtpUser = "example@gmail.com";  // Your email
+        private readonly string smtpPass = "xxxx xxxx xxxx xxxx"; // Use app password
 
         public async Task SendEmailAsync(string email, string subject, string htmlMessage)
         {

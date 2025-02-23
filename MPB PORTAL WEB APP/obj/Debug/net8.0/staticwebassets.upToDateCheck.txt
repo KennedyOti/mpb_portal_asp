@@ -41,6 +41,7 @@ wwwroot\assets\js\plugin\sweetalert\sweetalert.min.js
 wwwroot\assets\js\plugin\webfont\webfont.min.js
 wwwroot\assets\js\script.js
 wwwroot\attachments\087e3acb-0c9d-44c0-a41c-6d9b33178868.docx
+wwwroot\attachments\29534934-7b80-41a7-9f1e-9e1e4bfd248a.jpg
 wwwroot\attachments\399b281e-506a-4cde-b7c8-ad52add7ea5a.pdf
 wwwroot\attachments\43e8896b-5426-4f95-bbe3-2eac556ceae5.jpg
 wwwroot\attachments\45d341ca-d6d8-4062-99cf-0c28be80eb30.pdf
