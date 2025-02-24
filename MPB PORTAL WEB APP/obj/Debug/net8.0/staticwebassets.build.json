@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WcHAQ6Opc1G1KLnE6DqAa2Q9b3l29orP5L5DhzGFQI8=",
+  "Hash": "MhiRYw7rMfNuDPWa2Hn6iFHn4HkqCCX85cYbOP3RAJk=",
   "Source": "mpbapp",
   "BasePath": "_content/mpbapp",
   "Mode": "Default",
@@ -2850,6 +2850,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\reports\\e83133db-642e-4d5a-890f-fdf8044e6aa9.docx"
+    },
+    {
+      "Identity": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx",
+      "SourceId": "mpbapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\",
+      "BasePath": "_content/mpbapp",
+      "RelativePath": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2#[.{fingerprint}]?.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "um3s74yjic",
+      "Integrity": "mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx"
     },
     {
       "Identity": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\f8081422-20d2-4e79-b3ca-f20f58a1b10e.pdf",
@@ -13983,6 +14004,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-P3ykRdcfE3CcUsMZplOROXcHdEN6wdio6cW5k4NSunc="
+        }
+      ]
+    },
+    {
+      "Route": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx",
+      "AssetFile": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 10:10:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc="
+        }
+      ]
+    },
+    {
+      "Route": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2.um3s74yjic.docx",
+      "AssetFile": "C:\\Users\\otien\\source\\repos\\MPB PORTAL WEB APP\\MPB PORTAL WEB APP\\wwwroot\\reports\\f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 10:10:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "um3s74yjic"
+        },
+        {
+          "Name": "label",
+          "Value": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc="
         }
       ]
     },

@@ -10991,6 +10991,88 @@
       ]
     },
     {
+      "Route": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx",
+      "AssetFile": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 10:10:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc="
+        }
+      ]
+    },
+    {
+      "Route": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2.um3s74yjic.docx",
+      "AssetFile": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17585"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 10:10:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "um3s74yjic"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mie9s6iWNUnZkQ7BanEB3R31p+aNcIiz4G7z4VRSNpc="
+        },
+        {
+          "Name": "label",
+          "Value": "reports/f385d661-fe1d-4535-8ff1-43d0b10af9f2.docx"
+        }
+      ]
+    },
+    {
       "Route": "reports/f8081422-20d2-4e79-b3ca-f20f58a1b10e.pdf",
       "AssetFile": "reports/f8081422-20d2-4e79-b3ca-f20f58a1b10e.pdf",
       "Selectors": [],
